@@ -15,56 +15,56 @@ class CaixaDaLanchonete {
 
 
 validarPedido(itens) {
-           
-    if(itens.length === 0) {
-     return "Não há itens no carrinho de compra!";
- }
 
-  let principal = false
-  let extras = false
-  let combos = false
-            
+    let principal = false
+    let extras = false
+    let combos = false
+
           // Validações dos itens.
+
+        if(itens.length === 0) {
+            return "Não há itens no carrinho de compra!";
+        }
 
         for (const itemQuantidade of itens) {
             const [item, quantidade] = itemQuantidade.split(',');
 
-            if (!this.itens[item]) { // Verifica se o item passado é válido.
+         if (!this.itens[item]) { // Verifica se o item passado é válido.
                 return "Item inválido!";
             }
 
-            if (quantidade == 0) { // Verifica se o item é vazio ou não.
+         if (quantidade == 0) { // Verifica se o item é vazio ou não.
                 return "Quantidade inválida!";
             }
 
-            if(this.itens[item].descricao.includes("extra")) { // Verifica se a palavra "extra" está incluida no item selecionado
+         if(this.itens[item].descricao.includes("extra")) { // Verifica se a palavra "extra" está incluida no item selecionado
            extras = true
             } else {
            principal = true
             }
 
-            if(!principal & extras) { // Verifica se o item extra está sendo passado sem o item principal.
+         if(!principal & extras) { // Verifica se o item extra está sendo passado sem o item principal.
              return "Item extra não pode ser pedido sem o principal";
             }
 
-            if(this.itens[item].descricao.includes("1 suco e 1 sanduiche" || "1 cafe e 1 sanduiche")) { 
+         if(this.itens[item].descricao.includes("1 suco e 1 sanduiche" || "1 cafe e 1 sanduiche")) { 
                 combos = true
                  } else {
              principal = true
                  }
 
-            if(!principal & combos & extras) { // Verifica se os itens passados forem um combo e um extra, não poderá ser pedido sem um item principal.
+         if(!principal & combos & extras) { // Verifica se os itens passados forem um combo e um extra, não poderá ser pedido sem um item principal.
                   return "Item extra não pode ser pedido sem o principal";
                  }
 
-            if(item === "cafe" || item === "queijo") {
+         if(item === "cafe" || item === "queijo") {
                     if (principal = false) {
                         return "Item extra não pode ser pedido sem o principal"
-                    }
-                 }
-
-                }
-    }
+                  
+            }
+        }
+     }
+ }
 
     calcularValorDaCompra(formaDePagamento, itens) {
 
