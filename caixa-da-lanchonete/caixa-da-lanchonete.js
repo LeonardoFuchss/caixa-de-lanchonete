@@ -10,22 +10,22 @@ class CaixaDaLanchonete {
             combo1: { descricao: "1 suco e 1 sanduiche", valor: 9.50 },
             combo2: { descricao: "1 cafe e 1 sanduiche", valor: 7.50 }
         }
-        
-
         this.formaDePagamento = ["debito", "credito", "dinheiro"];
     }
 
 
-        validarPedido(itens) {
-            if(itens.length === 0) {
-                return "Não há itens no carrinho de compra!";
-            }
+validarPedido(itens) {
+           
+    if(itens.length === 0) {
+     return "Não há itens no carrinho de compra!";
+ }
 
-            let principal = false
-            let extras = false
-            let combos = false
+  let principal = false
+  let extras = false
+  let combos = false
             
           // Validações dos itens.
+
         for (const itemQuantidade of itens) {
             const [item, quantidade] = itemQuantidade.split(',');
 
@@ -39,12 +39,11 @@ class CaixaDaLanchonete {
 
             if(this.itens[item].descricao.includes("extra")) { // Verifica se a palavra "extra" está incluida no item selecionado
            extras = true
-           
-             } else {
+            } else {
            principal = true
+            }
 
-             }
-            if(!principal & extras){ // Verifica se o item extra está sendo passado sem o item principal.
+            if(!principal & extras) { // Verifica se o item extra está sendo passado sem o item principal.
              return "Item extra não pode ser pedido sem o principal";
             }
 
@@ -52,8 +51,8 @@ class CaixaDaLanchonete {
                 combos = true
                  } else {
              principal = true
-     
-                }
+                 }
+
             if(!principal & combos & extras) { // Verifica se os itens passados forem um combo e um extra, não poderá ser pedido sem um item principal.
                   return "Item extra não pode ser pedido sem o principal";
                  }
@@ -66,7 +65,6 @@ class CaixaDaLanchonete {
 
                 }
     }
-
 
     calcularValorDaCompra(formaDePagamento, itens) {
 
