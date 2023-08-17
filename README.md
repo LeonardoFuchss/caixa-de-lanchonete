@@ -1,4 +1,5 @@
-Caixa da Lanchonete - Sistema de Pedidos e Pagamentos
+# Caixa da Lanchonete - Sistema de Pedidos, Pagamentos e Testes
+
 
 Este é um projeto simples de uma classe CaixaDaLanchonete que simula um sistema de pedidos e pagamentos para uma lanchonete. A classe oferece funcionalidades para calcular o valor total da compra, aplicando descontos ou acréscimos baseados na forma de pagamento escolhida, e também valida os pedidos para garantir que sejam feitos corretamente.
 
