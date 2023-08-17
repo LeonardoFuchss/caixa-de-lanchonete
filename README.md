@@ -1,16 +1,21 @@
 Caixa da Lanchonete - Sistema de Pedidos e Pagamentos
+
 Este é um projeto simples de uma classe CaixaDaLanchonete que simula um sistema de pedidos e pagamentos para uma lanchonete. A classe oferece funcionalidades para calcular o valor total da compra, aplicando descontos ou acréscimos baseados na forma de pagamento escolhida, e também valida os pedidos para garantir que sejam feitos corretamente.
 
-Funcionalidades
+FUNCIONALIDADES
+
 A classe CaixaDaLanchonete oferece as seguintes funcionalidades:
 
 Inicialização de Itens e Formas de Pagamento: A classe é inicializada com um conjunto de itens disponíveis para compra na lanchonete, juntamente com suas descrições e valores. Além disso, ela possui uma lista de formas de pagamento aceitas.
 
+
 Validação de Pedidos: A função validarPedido valida os pedidos feitos, verificando se os itens e quantidades passados são válidos. Ela também faz verificações específicas para garantir que os pedidos estejam corretos, como a validação de pedidos extras em relação aos itens principais e a validação de combos.
+
 
 Cálculo do Valor da Compra: A função calcularValorDaCompra calcula o valor total da compra com base nos itens selecionados e na forma de pagamento escolhida. Ela aplica descontos ou acréscimos de acordo com a forma de pagamento e retorna o valor formatado em moeda brasileira (BRL).
 
-Formas de Pagamento
+FORMAS DE PAGAMENTO
+
 A classe aceita as seguintes formas de pagamento:
 
 Débito: Sem acréscimos ou descontos.
