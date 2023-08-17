@@ -40,7 +40,7 @@ Contribuições são bem-vindas! Se você encontrar bugs, melhorias ou novas fun
 
 Testes Automatizados: O projeto inclui uma suíte de testes automatizados para validar as funcionalidades da classe. Os testes abrangem diversos cenários, incluindo validação de pedidos vazios, cálculos de valores para diferentes itens e formas de pagamento, validações de pedidos inválidos e mais.
 
-# Como Executar os Testes
+# COMO EXECUTAR OS TESTES
 Para executar os testes automatizados incluídos no projeto, siga os passos abaixo:
 
 Certifique-se de ter o Node.js instalado em sua máquina.
