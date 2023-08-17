@@ -3,7 +3,7 @@
 
 Este é um projeto simples de uma classe CaixaDaLanchonete que simula um sistema de pedidos e pagamentos para uma lanchonete. A classe oferece funcionalidades para calcular o valor total da compra, aplicando descontos ou acréscimos baseados na forma de pagamento escolhida, e também valida os pedidos para garantir que sejam feitos corretamente.
 
-## Funcionalidades
+# Funcionalidades
 
 A classe CaixaDaLanchonete oferece as seguintes funcionalidades:
 
@@ -15,7 +15,7 @@ Validação de Pedidos: A função validarPedido valida os pedidos feitos, verif
 
 Cálculo do Valor da Compra: A função calcularValorDaCompra calcula o valor total da compra com base nos itens selecionados e na forma de pagamento escolhida. Ela aplica descontos ou acréscimos de acordo com a forma de pagamento e retorna o valor formatado em moeda brasileira (BRL).
 
-### Formas de pagamento
+# Formas de pagamento
 
 A classe aceita as seguintes formas de pagamento:
 
@@ -36,11 +36,11 @@ Combo 2 (1 café e 1 sanduíche)
 Contribuição
 Contribuições são bem-vindas! Se você encontrar bugs, melhorias ou novas funcionalidades para adicionar, fique à vontade para abrir um issue ou enviar um pull request.
 
-#### TESTES
+# TESTES
 
 Testes Automatizados: O projeto inclui uma suíte de testes automatizados para validar as funcionalidades da classe. Os testes abrangem diversos cenários, incluindo validação de pedidos vazios, cálculos de valores para diferentes itens e formas de pagamento, validações de pedidos inválidos e mais.
 
-##### Como Executar os Testes
+# Como Executar os Testes
 Para executar os testes automatizados incluídos no projeto, siga os passos abaixo:
 
 Certifique-se de ter o Node.js instalado em sua máquina.
